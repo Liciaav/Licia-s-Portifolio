@@ -1,14 +1,19 @@
 function Portfolio() {
     return (
       <section>
-        {projects.map((project) => (
+        {Projects.map((project) => (
           <Project key={project.id} {...project} />
         ))}
       </section>
     );
   }
 
-  function Project({ title, imageUrl, deployedLink, githubLink }) {
+  function Project({ title, imageUrl, deployedLink, githubLink }: {
+      title: any,
+      imageUrl: any,
+      deployedLink: any,
+      githubLink: any
+  )}; any
     return (
       <div>
         <h3>{title}</h3>
@@ -18,4 +23,6 @@ function Portfolio() {
       </div>
     );
   }
+
+  export default Project;
   

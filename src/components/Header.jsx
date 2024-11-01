@@ -1,4 +1,7 @@
-function Header({ setCurrentSection, currentSection }) {
+function Header({ setCurrentSection, currentSection } : {
+  setCurrentSection:any; 
+  setCurrentSection:any;
+}): any
     return (
       <header>
         <h1>Your Name</h1>
@@ -15,4 +18,5 @@ function Header({ setCurrentSection, currentSection }) {
         </nav>
       </header>
     );
-  }
+
+    export default Header;

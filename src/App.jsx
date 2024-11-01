@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import Header from './Header';
 import AboutMe from './AboutMe';
 import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Resume from './Resume';
-import Footer from './Footer';
 
 function App() {
   const [currentSection, setCurrentSection] = useState('AboutMe');
@@ -24,9 +22,10 @@ function App() {
 
   return (
     <div>
-      <Header setCurrentSection={setCurrentSection} currentSection={currentSection} />
+      {/* <Header setCurrentSection={setCurrentSection} currentSection={currentSection} />
       <main>{renderSection()}</main>
-      <Footer />
+      <Footer /> */}
+      <AboutMe/>
     </div>
   );
 }
