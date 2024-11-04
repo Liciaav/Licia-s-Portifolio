@@ -1,5 +1,4 @@
 function Contact() {
-    // State and validation logic for the form
     return (
       <section>
         <form>
