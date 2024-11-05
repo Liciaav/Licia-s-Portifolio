@@ -1,4 +1,4 @@
-function Project({ title, imageUrl, deployedLink, githubLink}
+function Project({ title, imageUrl, deployedLink, githubLink}){
     return (
  <div>  
       <div>
@@ -7,6 +7,7 @@ function Project({ title, imageUrl, deployedLink, githubLink}
         <a href="https://github.com/BriannaVitan/Happiest-of-Hours.git">View Live</a>
         <a href="BriannaVitan/Happiest-of-Hours">View Code</a>
       </div>
+      
       <div>
       <h3>My Cars</h3>
       <img src="./image/images.jpeg" alt="Vehicles" />
@@ -21,7 +22,6 @@ function Project({ title, imageUrl, deployedLink, githubLink}
       </div>
 </div>          
     );
-  );
-
+}
   export default Project;
   

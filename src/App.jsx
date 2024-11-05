@@ -1,10 +1,12 @@
 import { useState } from 'react';
 import Header from './components/Header';
-import AboutMe from './AboutMe';
-import Portfolio from './Portfolio';
-import Project from './Project';
-import Contact from './Contact';
-import Resume from './Resume';
+import AboutMe from './components/AboutMe';
+import Portfolio from './components/Portfolio';
+import Project from './components/Project';
+import Contact from './components/Contact';
+import Resume from './components/Resume';
+import Footer from './components/Footer';
+
 
 function App() {
   const [currentSection, setCurrentSection] = useState('AboutMe');

@@ -7,17 +7,23 @@ body {
 }
 
 header {
-    background: #333;
+    background: #3b5f6a60;
     color: #fff;
     padding: 10px 20px;
 }
 
-header h1 {
+h1 {
+    font-size: medium;
+    justify-content: center;
     margin: 0;
 }
 
 nav {
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
 }
 
 nav button {

@@ -1,7 +1,6 @@
-function Header({ setCurrentSection, currentSection}:any ):any
+function Header({ setCurrentSection, currentSection}){
     return (
       <header>
-        <h1>Licia Arcanjo Vasconcelos</h1>
         <nav>
           {['AboutMe', 'Portfolio', 'Contact', 'Resume'].map((section) => (
             <button
@@ -13,7 +12,8 @@ function Header({ setCurrentSection, currentSection}:any ):any
             </button>
           ))}
         </nav>
+        <h1>Licia Arcanjo Vasconcelos</h1>
       </header>
     );
-
+  }
     export default Header;
