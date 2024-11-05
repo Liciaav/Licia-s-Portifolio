@@ -29,7 +29,6 @@ function App() {
       <Header setCurrentSection={setCurrentSection} currentSection={currentSection} />
       <main>{renderSection()}</main>
       <Footer />
-      <AboutMe/>
     </div>
   );
 }
