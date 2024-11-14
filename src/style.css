@@ -59,7 +59,7 @@ form {
 }
 
 footer {
-    background: #333;
+    background: #3b5f6a60;
     color: #fff;
     text-align: center;
     padding: 10px 0;
@@ -69,4 +69,16 @@ footer a {
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
+}
+
+#my-avatar{
+width: 200px;
+}
+
+#icone{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
