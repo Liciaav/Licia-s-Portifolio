@@ -21,3 +21,6 @@ Email: liciaav@gmail.com
 LinkedIn: Liciaav
 GitHub: Liciaav
 
+## Netlify Link
+https://teal-mermaid-894fc1.netlify.app/
+
