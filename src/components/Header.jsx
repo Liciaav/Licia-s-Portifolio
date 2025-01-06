@@ -1,6 +1,7 @@
 function Header({ setCurrentSection, currentSection}){
     return (
       <header>
+        <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "cursive" }}>Licia Arcanjo Vasconcelos</h1>
         <nav>
           {['AboutMe', 'Portfolio', 'Contact', 'Resume'].map((section) => (
             <button
@@ -12,7 +13,6 @@ function Header({ setCurrentSection, currentSection}){
             </button>
           ))}
         </nav>
-        <h1>Licia Arcanjo Vasconcelos</h1>
       </header>
     );
   }

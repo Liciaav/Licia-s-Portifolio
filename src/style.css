@@ -22,7 +22,8 @@ nav {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 8px;
 }
 
 nav button {
@@ -39,9 +40,23 @@ nav button.active {
     border-bottom: 2px solid #fff;
 }
 
+/* home page main content */
 main {
     padding: 20px;
 }
+
+.about-me-section {
+    display: flex;
+}
+
+.my-avatar {
+    width: 200px;
+}
+
+.about-me-description {
+    margin-left: 10px;
+}
+/* end of home page main content */
 
 form {
     display: flex;
@@ -71,14 +86,38 @@ footer a {
     text-decoration: none;
 }
 
-#my-avatar{
-width: 200px;
-}
-
-#icone{
+#icone {
     width: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
+/* mobile responsive home page main content */
+@media (max-width: 600px) {
+    header {
+        min-width: 350px
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .my-avatar-section {
+       display: flex;
+       justify-content: center;
+    }
+
+    .about-me-section {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid red;
+    }
+    
+    .about-me-description {
+        margin-left: 0px;
+    }
+  }
+/* end of home page main content */
