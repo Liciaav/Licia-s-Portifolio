@@ -1,0 +1,9 @@
+.portfolio-section {
+    padding: 40px 20px;
+    background-color: #f4f7fc;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

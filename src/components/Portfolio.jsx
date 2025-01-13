@@ -1,10 +1,15 @@
-import Project from './Project';
+import Layout from './Layout.jsx';
+import Project from './Project.jsx';
+import './Portfolio.css';
 
 function Portfolio() {
-    return (
-      <section>
-          <Project/>
+  return (
+    <Layout>
+      <section className="portfolio-section">
+        <Project />
       </section>
-    );
-  }
-  export default Portfolio;
+    </Layout>
+  );
+}
+
+export default Portfolio;

@@ -1,49 +1,77 @@
-function Project({ title, imageUrl, deployedLink, githubLink}){
-    return (
- <div>  
-      <div>
-        <h3>Happiest of Hours</h3>
-        <img id='icone' src={"./src/image/dalas.jpg"} alt="Dalla's skyline"></img>
-        <a target="_blank" href="https://github.com/BriannaVitan/Happiest-of-Hours.git">View Code</a>
-        <a href="BriannaVitan/Happiest-of-Hours"></a>
-      </div>
+import './Project.css';
 
-      <div>
-        <h3>My Cars</h3>
-        <img id='icone' src={"./src/image/cars.webp"} alt="Vehicles"></img>
-        <a target="_blank" href="https://github.com/Liciaav/Licia-My-Cars.git">View Code</a>
-        <a href="Liciaav/Licia-My-Cars"></a>
-      </div>
+function Project() {
+  const projects = [
+    {
+      title: "READme",
+      imageUrl: "./src/image/placeholder.jpg",
+      githubLink: "https://github.com/Liciaav/Licia-README",
+    },
+    {
+      title: "My Cars",
+      imageUrl: "./src/image/cars.webp",
+      githubLink: "https://github.com/Liciaav/Licia-My-Cars",
+    },
+    {
+      title: "Weather App",
+      imageUrl: "./src/image/wheather.jpeg",
+      githubLink: "https://github.com/Liciaav/Licia-Weather.app",
+    },
+    {
+      title: "CMS",
+      imageUrl: "./src/image/placeholder.jpg",
+      githubLink: "https://github.com/Liciaav/CMS-project",
+    },
+    {
+      title: "Candidate Search",
+      imageUrl: "./src/image/wheather.jpeg",
+      githubLink: "https://github.com/Liciaav/Licia-s-Candidate-Search",
+    },
+    {
+      title: "Kanban Board",
+      imageUrl: "./src/image/wheather.jpeg",
+      githubLink: "https://github.com/Liciaav/Licia-Kanban-Board",
+    },
+    {
+      title: "Social Network",
+      imageUrl: "./src/image/wheather.jpeg",
+      githubLink: "https://github.com/Liciaav/Licia-Social-Network",
+    },
+    {
+      title: "Book Search",
+      imageUrl: "./src/image/wheather.jpeg",
+      githubLink: "https://github.com/Liciaav/Licia-Book-Search",
+    },
+    {
+      title: "Happiest of Hours",
+      imageUrl: "./src/image/wheather.jpeg",
+      githubLink: "https://github.com/BriannaVitan/Happiest-of-Hours",
+    },
+    {
+      title: "Trip Planner 3000",
+      imageUrl: "./src/image/wheather.jpeg",
+      githubLink: "https://github.com/kaneganteng/Trip-Planner-3000",
+    },
+    {
+      title: "Hangman 2",
+      imageUrl: "./src/image/wheather.jpeg",
+      githubLink: "https://github.com/IsakTL/hangman-2",
+    },
+  ];
 
-      <div>
-        <h3>Weather App</h3>
-        <img id='icone' src={"./src/image/wheather.jpeg"} alt="Weather"></img>
-        <a target="_blank" href="https://github.com/Liciaav/Licia-Weather.app.git">View Code</a>
-        <a href="Liciaav/Licia-Weather.app"></a>
-      </div>
-
-      <div>
-        <h3>Placeholder</h3>
-        <img id='icone' src={"./src/image/placeholder.jpg"} alt="Placeholder"></img>
-        <a target="_blank" href="https://github.com/Liciaav/">View Code</a>
-        <a href="Liciaav/Licia"></a>
-      </div>
-
-      <div>
-        <h3>Placeholder</h3>
-        <img id='icone' src={"./src/image/placeholder.jpg"} alt="Placeholder"></img>
-        <a href="https://github.com/Liciaav/">View Code</a>
-        <a href="Liciaav/Licia"></a>
-      </div>
-
-      <div>
-        <h3>Placeholder</h3>
-        <img id='icone' src={"./src/image/placeholder.jpg"} alt="Placeholder"></img>
-        <a href="https://github.com/Liciaav/">View Code</a>
-        <a href="Liciaav/Licia"></a>
-      </div>
-</div>          
-    );
+  return (
+    <div className="projects-container">
+      {projects.map((project, index) => (
+        <div key={index} className="project-card">
+          <img className="project-image" src={project.imageUrl} alt={project.title} />
+          <h3 className="project-title">{project.title}</h3>
+          <div className="project-links">
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
-  export default Project;
-  
+
+export default Project;

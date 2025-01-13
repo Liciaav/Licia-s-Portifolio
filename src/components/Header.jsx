@@ -2,6 +2,7 @@ function Header({ setCurrentSection, currentSection}){
     return (
       <header>
         <h1 style={{ textAlign: "center", fontSize: "40px", fontFamily: "cursive" }}>Licia Arcanjo Vasconcelos</h1>
+        <h1 style={{ textAlign: "center", fontSize: "20px", fontFamily: "cursive" }}>Full Stack Web Developer</h1>
         <nav>
           {['AboutMe', 'Portfolio', 'Contact', 'Resume'].map((section) => (
             <button

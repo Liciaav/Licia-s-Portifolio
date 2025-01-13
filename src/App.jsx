@@ -2,7 +2,6 @@ import { useState } from 'react';
 import Header from './components/Header';
 import AboutMe from './components/AboutMe';
 import Portfolio from './components/Portfolio';
-import Project from './components/Project';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
 import Footer from './components/Footer';
