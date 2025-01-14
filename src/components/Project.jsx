@@ -62,12 +62,16 @@ function Project() {
   return (
     <div className="projects-container">
       {projects.map((project, index) => (
-        <div key={index} className="project-card">
-          <img className="project-image" src={project.imageUrl} alt={project.title} />
-          <h3 className="project-title">{project.title}</h3>
-          <div className="project-links">
+        <div key={index} class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h3 className="project-title">{project.title}</h3>
+            </div>
+        
+          <div class="flip-card-back">
             <a href={project.githubLink} target="_blank" rel="noopener noreferrer">View Code</a>
           </div>
+        </div>
         </div>
       ))}
     </div>
