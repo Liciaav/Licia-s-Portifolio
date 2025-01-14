@@ -9,4 +9,8 @@ export default defineConfig({
       input: './index.html',
     },
   },
+  server: {
+    port: 3000,
+    open: true,
+  },
 });
