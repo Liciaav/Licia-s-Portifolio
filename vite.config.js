@@ -8,5 +8,9 @@ export default defineConfig({
     port:3000,
     open: true
   },
-  base: '/',
+  build: {
+    rollupOptions: {
+      external: [],  // Desabilitar a externalização
+    }
+  }
 })
