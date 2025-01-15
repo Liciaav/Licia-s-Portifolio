@@ -27,7 +27,7 @@ function Contact() {
       <section className="contact-container">
         <h1 className="contact-title">Contact Us</h1>
         <form 
-          action="https://formsubmit.co/el/navobu"
+          action="https://formsubmit.co/liciaavasc@gmail.com"
           method="POST"
           onSubmit={handleSubmit}
           className="contact-form"
@@ -59,7 +59,7 @@ function Contact() {
             className="contact-textarea"
           ></textarea>
           <button type="submit" className="contact-button">Send</button>
-          <input type="hidden" name="_next" value="https://formsubmit.co/success" />
+          <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" />
         </form>
       </section>
     </Layout>
