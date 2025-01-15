@@ -1,68 +1,43 @@
-import React, { useState } from 'react';
-import Layout from './Layout.jsx';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 import './Contact.css';
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
+  const formRef = useRef();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    alert("Mensagem enviada com sucesso!");
+
+    // Usando FormData para capturar os dados do formulário
+    const formData = new FormData(formRef.current);
+    const data = {
+      user_name: formData.get('user_name'),
+      user_email: formData.get('user_email'),
+      message: formData.get('message')
+    };
+
+    console.log('Data being sent:', data);
+
+    // Enviando dados usando emailjs.send
+    emailjs.send('service_0xdeffu', 'template_l6hy94r', data, 'BV5WBX4kEhhKs0Ix4')
+      .then((result) => {
+        console.log('Success:', result);
+        alert('Message sent successfully!');
+      }, (error) => {
+        console.log('Error:', error);
+        alert(`An error occurred: ${error.text}`);
+      });
   };
 
   return (
-    <Layout>
-      <section className="contact-container">
-        <h1 className="contact-title">Contact Us</h1>
-        <form 
-          action="https://formsubmit.co/liciaavasc@gmail.com"
-          method="POST"
-          onSubmit={handleSubmit}
-          className="contact-form"
-        >
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            required
-            value={formData.name}
-            onChange={handleChange}
-            className="contact-input"
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            required
-            value={formData.email}
-            onChange={handleChange}
-            className="contact-input"
-          />
-          <textarea
-            name="message"
-            placeholder="Message"
-            required
-            value={formData.message}
-            onChange={handleChange}
-            className="contact-textarea"
-          ></textarea>
-          <button type="submit" className="contact-button">Send</button>
-          <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html" />
-        </form>
-      </section>
-    </Layout>
+    <section>
+      <form ref={formRef} onSubmit={sendEmail}>
+        <input type="text" name="user_name" placeholder="Name" required />
+        <input type="email" name="user_email" placeholder="Email" required />
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
   );
 }
 
