@@ -8,7 +8,6 @@ function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Usando FormData para capturar os dados do formulário
     const formData = new FormData(formRef.current);
     const data = {
       user_name: formData.get('user_name'),
@@ -18,11 +17,12 @@ function Contact() {
 
     console.log('Data being sent:', data);
 
-    // Enviando dados usando emailjs.send
     emailjs.send('service_0xdeffu', 'template_l6hy94r', data, 'BV5WBX4kEhhKs0Ix4')
       .then((result) => {
         console.log('Success:', result);
         alert('Message sent successfully!');
+        
+        formRef.current.reset();
       }, (error) => {
         console.log('Error:', error);
         alert(`An error occurred: ${error.text}`);
@@ -30,12 +30,30 @@ function Contact() {
   };
 
   return (
-    <section>
-      <form ref={formRef} onSubmit={sendEmail}>
-        <input type="text" name="user_name" placeholder="Name" required />
-        <input type="email" name="user_email" placeholder="Email" required />
-        <textarea name="message" placeholder="Message" required></textarea>
-        <button type="submit">Send</button>
+    <section className="contact-container">
+      <h2 className="contact-title">Contact Me</h2>
+      <form ref={formRef} onSubmit={sendEmail} className="contact-form">
+        <input 
+          type="text" 
+          name="user_name" 
+          placeholder="Name" 
+          required 
+          className="contact-input"
+        />
+        <input 
+          type="email" 
+          name="user_email" 
+          placeholder="Email" 
+          required 
+          className="contact-input"
+        />
+        <textarea 
+          name="message" 
+          placeholder="Message" 
+          required 
+          className="contact-textarea"
+        />
+        <button type="submit" className="contact-button">Send</button>
       </form>
     </section>
   );
