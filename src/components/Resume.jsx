@@ -9,7 +9,7 @@ function Resume() {
         <p className="resume-description">
           Download my resume by clicking the button below:
         </p>
-        <a target="_blank" rel="noopener noreferrer" href="https://1drv.ms/w/c/2067ba7f6a253d08/IQRPfx5pmDGNQa-nHwvrK1SOAQRcY2ziDT-3Mj_wfU6SLQ4&download=1" download className="resume-button">
+        <a target="_blank" rel="noopener noreferrer" href="https://1drv.ms/download?2067ba7f6a253d08/IQRPfx5pmDGNQa-nHwvrK1SOAQRcY2ziDT-3Mj_wfU6SLQ4" download className="resume-button">
           Download Resume
         </a>
       </section>
