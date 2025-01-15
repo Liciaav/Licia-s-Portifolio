@@ -1,48 +1,52 @@
-/* Resume.css */
-form{
+form {
   align-items: center;
 }
+
 .resume-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f4f7fc;  
-    padding: 20px;
-  }
-  
-  .resume-title {
-    font-size: 2.5rem;
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .resume-description {
-    font-size: 1.2rem;
-    font-family: 'Arial', sans-serif;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .resume-button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    color: white;
-    background-color: #5c6bc0;  /* Cor de fundo moderna */
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-  }
-  
-  .resume-button:hover {
-    background-color: #3f4b8f;  /* Efeito de hover */
-  }
-  
-  .resume-button:active {
-    background-color: #2f3a73;  /* Efeito de clique */
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f7fc;  
+  padding: 20px;
+}
+
+.resume-title {
+  font-size: 2.5rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.resume-description {
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resume-buttons {
+  display: flex;
+  gap: 20px; /* Espaço entre os botões */
+}
+
+.resume-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #5c6bc0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #3f4b8f;
+}
+
+.resume-button:active {
+  background-color: #2f3a73;
+}
