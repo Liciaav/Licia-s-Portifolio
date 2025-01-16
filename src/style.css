@@ -114,21 +114,19 @@ footer a {
         font-family: 'Poppins', sans-serif;
     }
 
-    .my-avatar-section {
-       display: flex;
-       justify-content: center;
+    .about-me-section {
+        flex-direction: column; /* Altere isso se quiser que a imagem e o texto fiquem em coluna no mobile */
+        align-items: center;
+        text-align: center;
     }
 
-    .about-me-section {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid red;
-        font-family: 'Poppins', sans-serif;
+    .my-avatar {
+        width: 300px; /* Ajuste o tamanho para ser responsivo */
+        margin-bottom: 20px;
     }
-    
+
     .about-me-description {
-        margin-left: 0px;
-        font-family: 'Poppins', sans-serif;
+        margin-left: 0; /* Remova a margem no mobile para centralizar o texto */
     }
 }
 /* end of home page main content */
