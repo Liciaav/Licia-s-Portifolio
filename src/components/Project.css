@@ -41,8 +41,10 @@
   background-color: white;
   color: black;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px;
 }
 
 .flip-card-back {
@@ -52,4 +54,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project-image {
+  max-width: 100%;
+  max-height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10%;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 5px;
 }
