@@ -1,8 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
-import './Contact.css';
+import './Contato.css';
 
-function Contact() {
+function Contato() {
   const formRef = useRef();
 
   const sendEmail = (e) => {
@@ -31,12 +31,12 @@ function Contact() {
 
   return (
     <section className="contact-container">
-      <h2 className="contact-title">Contact Me</h2>
+      <h2 className="contact-title">Fale comigo</h2>
       <form ref={formRef} onSubmit={sendEmail} className="contact-form">
         <input 
           type="text" 
           name="user_name" 
-          placeholder="Name" 
+          placeholder="Nome" 
           required 
           className="contact-input"
         />
@@ -49,14 +49,14 @@ function Contact() {
         />
         <textarea 
           name="message" 
-          placeholder="Message" 
+          placeholder="Menssagem" 
           required 
           className="contact-textarea"
         />
-        <button type="submit" className="contact-button">Send</button>
+        <button type="submit" className="contact-button">Enviar</button>
       </form>
     </section>
   );
 }
 
-export default Contact;
+export default Contato;

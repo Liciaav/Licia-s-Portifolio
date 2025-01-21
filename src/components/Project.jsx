@@ -70,7 +70,7 @@ function Project() {
             </div>
 
             <div class="flip-card-back">
-              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">View Code</a>
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">Veja Codigo</a>
             </div>
           </div>
         </div>
