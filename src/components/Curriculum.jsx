@@ -3,7 +3,7 @@ import Layout from "./Layout.jsx";
 import './Curriculum.css'; 
 
 function Curriculum() {
-  const fileUrl = "https://1drv.ms/w/c/2067ba7f6a253d08/IQRPfx5pmDGNQa-nHwvrK1SOAQRcY2ziDT-3Mj_wfU6SLQ4";
+  const fileUrl = "https://1drv.ms/w/s!AtaqmabEmyycgQhKGYpqX4isuYBN?e=yfWb14";
 
   return (
     <Layout>
