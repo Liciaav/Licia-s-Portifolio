@@ -10,14 +10,14 @@ function Resume() {
       <section className="resume-container">
         <h2 className="resume-title">Resume</h2>
         <p className="resume-description">
-          You can download my resume by clicking the buttons below:
+          You can download my resume by clicking the buttom below:
         </p>
         <div className="resume-buttons">
           <a 
             href={fileUrl} 
             download 
-            className="resume-button">
-            Download Resume
+            className="resume-button"
+            target="_blank" rel="noopener noreferrer">Download Resume
           </a>
         </div>
       </section>
