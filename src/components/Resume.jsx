@@ -10,7 +10,7 @@ function Resume() {
       <section className="resume-container">
         <h2 className="resume-title">Resume</h2>
         <p className="resume-description">
-          You can download my resume by clicking the buttom below:
+          You can download my resume by clicking the button below:
         </p>
         <div className="resume-buttons">
           <a 

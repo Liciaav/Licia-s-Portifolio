@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import Layout from './Layout';
 import './Contact.css';
 
 function Contact() {
@@ -30,6 +31,7 @@ function Contact() {
   };
 
   return (
+    <Layout>
     <section className="contact-container">
       <h2 className="contact-title">Contact Me</h2>
       <form ref={formRef} onSubmit={sendEmail} className="contact-form">
@@ -56,6 +58,7 @@ function Contact() {
         <button type="submit" className="contact-button">Send</button>
       </form>
     </section>
+    </Layout>
   );
 }
 
