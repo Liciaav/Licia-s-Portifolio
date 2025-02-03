@@ -8,8 +8,7 @@ function Header({ setCurrentSection, currentSection }) {
           <button
             key={section}
             onClick={() => setCurrentSection(section)}
-            className={currentSection === section ? 'active' : ''}
-          >
+            className={currentSection === section ? 'active' : ''}>
             {section}
           </button>
         ))}

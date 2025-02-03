@@ -1,9 +1,9 @@
 import React from "react";
 import Layout from "./Layout.jsx";
-import './Resume.css'; 
+import './resume.css'; 
 
 function Resume() {
-  const fileUrl = "https://1drv.ms/w/c/2067ba7f6a253d08/IQRPfx5pmDGNQa-nHwvrK1SOAQRcY2ziDT-3Mj_wfU6SLQ4";
+  const fileUrl = "https://1drv.ms/w/c/9c2c9bc4a699aad6/EdaqmabEmywggJyKAAAAAAABXsUNzANFmab5yjQZDag8-g?e=OMxezT";
 
   return (
     <Layout>
@@ -18,6 +18,7 @@ function Resume() {
             download 
             className="resume-button"
             target="_blank" rel="noopener noreferrer">Download Resume
+
           </a>
         </div>
       </section>

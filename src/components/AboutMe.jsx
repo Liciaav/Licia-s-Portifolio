@@ -10,7 +10,7 @@ function AboutMe() {
         <img className="my-avatar" src="/images/Licia1.jpg" alt="Licia's photo" />
         </div>
         <p className="about-me-description">
-        I'm a versatile full-stack web developer, adept at blending creativity with problem-solving to craft intuitive and user-friendly applications. With meticulous attention to detail and a commitment to excellence, I excel in tackling projects of any complexity. My diverse background in Physiotherapy and Aesthetics enriches my perspective, allowing me to bring a unique, human-centered approach to every development endeavor. I'm constantly learning and staying up-to-date with the latest technologies to improve my skills.
+        Originally from Brazil, I have a degree in Physiotherapy and over 10 years of experience in Aesthetic Physiotherapy. This background has given me a keen eye for detail and a deep understanding of user needs. After moving to Canada in 2016, I transitioned into web development, blending creativity with problem-solving to craft intuitive and user-friendly applications. As a versatile full-stack developer, I am committed to excellence and thrive in tackling projects of any complexity. My unique perspective allows me to bring a human-centered approach to development. I continuously expand my skill set, staying up to date with the latest technologies to deliver exceptional digital experiences. 
         </p>
       </section>
     </Layout>

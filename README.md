@@ -2,7 +2,7 @@
 Welcome to my portfolio! I’m Licia Arcanjo Vasconcelos, a passionate web developer with expertise in building dynamic and responsive websites and web applications. Here you can learn more about me, my work, and the technologies I use.
 
 ## About Me
-I am Brazilian. I have a degree in Physiotherapy and have worked in aesthetic Physiotherapy for over 10 years. I moved to Canada in 2016 and became a mother. After that I decided to explore the world of website development. Now I am a web developer who loves creating clean, user-friendly, and performant websites. With a strong foundation in HTML, CSS, JavaScript, and modern web frameworks, I strive to deliver exceptional web experiences. I'm constantly learning and staying up-to-date with the latest technologies to improve my skills.
+Originally from Brazil, I have a degree in Physiotherapy and over 10 years of experience in Aesthetic Physiotherapy. This background has given me a keen eye for detail and a deep understanding of user needs. After moving to Canada in 2016, I transitioned into web development, blending creativity with problem-solving to craft intuitive and user-friendly applications. As a versatile full-stack developer, I am committed to excellence and thrive in tackling projects of any complexity. My unique perspective allows me to bring a human-centered approach to development. I continuously expand my skill set, staying up to date with the latest technologies to deliver exceptional digital experiences. 
 
 ## Skills
 Frontend: HTML, CSS, JavaScript, React, Bootstrap

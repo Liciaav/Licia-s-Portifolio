@@ -38,7 +38,7 @@ function Contact() {
         <input 
           type="text" 
           name="user_name" 
-          placeholder="Name" 
+          placeholder="Nome" 
           required 
           className="contact-input"
         />
@@ -51,11 +51,11 @@ function Contact() {
         />
         <textarea 
           name="message" 
-          placeholder="Message" 
+          placeholder="Menssagem" 
           required 
           className="contact-textarea"
         />
-        <button type="submit" className="contact-button">Send</button>
+        <button type="submit" className="contact-button">Submit</button>
       </form>
     </section>
     </Layout>

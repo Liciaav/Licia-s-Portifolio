@@ -1,25 +1,24 @@
 import { useState } from 'react';
-import Header from './components/Header';
-import AboutMe from './components/AboutMe';
-import Portfolio from './components/Portfolio';
-import Contact from './components/Contact';
-import Resume from './components/Resume';
-import Footer from './components/Footer';
-
+import Header from './components/Header.jsx';
+import SobreMim from './components/SobreMim.jsx';
+import Portifolio from './components/Portifolio.jsx';
+import Contato from './components/Contato.jsx';
+import Curriculum from './components/Curriculum.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
-  const [currentSection, setCurrentSection] = useState('AboutMe');
+  const [currentSection, setCurrentSection] = useState('SobreMim');
 
   const renderSection = () => {
     switch (currentSection) {
-      case 'Portfolio':
-        return <Portfolio />;
-      case 'Contact':
-        return <Contact />;
-      case 'Resume':
-        return <Resume />;
+      case 'Portifolio':
+        return <Portifolio />;
+      case 'Contato':
+        return <Contato />;
+      case 'Curriculum':
+        return <Curriculum />;
       default:
-        return <AboutMe />;
+        return <SobreMim />;
     }
   };
 

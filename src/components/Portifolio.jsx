@@ -1,8 +1,8 @@
 import Layout from './Layout.jsx';
 import Project from './Project.jsx';
-import './Portfolio.css';
+import './Portifolio.css';
 
-function Portfolio() {
+function Portifolio() {
   return (
     <Layout>
       <section className="portfolio-section">
@@ -12,4 +12,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default Portifolio;
